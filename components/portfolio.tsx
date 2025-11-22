@@ -4,7 +4,7 @@ import { ExternalLink, Github, Code2 } from 'lucide-react'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import Image from 'next/image'
+// using native <img> instead of next/image because next/image types/module is not available
 
 const projects = [
   {
@@ -27,8 +27,8 @@ const projects = [
     title: 'Portfolio Website',
     description: 'Modern portfolio website with animations, dark mode, and responsive design to showcase creative work.',
     image: '/creative-portfolio-layout.png',
-    liveLink: '#',
-    githubLink: '#',
+    liveLink: 'https://arpan-paul.vercel.app/',
+    githubLink: 'https://github.com/Arpan110/arpan-paul-portfolio',
     techStack: ['Next.js 15 (App Router)', 'React 19', 'Tailwind CSS v4', 'Framer Motion', 'TypeScript', 'Shadcn/ui', 'Nodemailer', 'Vercel'],
   },
   {
@@ -73,11 +73,10 @@ export function Portfolio() {
             <Card key={index} className="group overflow-hidden border-none shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full bg-card">
               <div className="relative h-52 overflow-hidden">
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10" />
-                <Image
+                <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               
