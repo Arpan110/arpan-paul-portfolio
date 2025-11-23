@@ -30,7 +30,7 @@ export function Footer() {
             </a>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 md:justify-items-end">
+          <div className="grid grid-cols-2 gap-8 md:justify-items-center">
             <div className="space-y-4">
               <h3 className="font-bold text-lg">Sitemap</h3>
               <ul className="space-y-2">

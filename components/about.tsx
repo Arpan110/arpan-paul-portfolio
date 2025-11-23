@@ -25,7 +25,7 @@ export function About() {
   }
 
   const handleResumeView = () => {
-    window.open('/resume.pdf', '_blank')
+    window.open('/Arpan-Paul-Resume.pdf', '_blank')
   }
 
   return (
@@ -79,19 +79,19 @@ export function About() {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-row sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-start">
               {/* Made button smaller and more compact as requested */}
               <a 
-                href="/resume.pdf" 
+                href="/Arpan-Paul-Resume.pdf" 
                 download 
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-2.5 rounded-full font-medium transition-all shadow-lg hover:shadow-primary/25 text-sm"
               >
                 <Download className="w-4 h-4" />
-                Download CV
+                Download Resume
               </a>
               
               <a 
-                href="/resume.pdf" 
+                href="/Arpan-Paul-Resume.pdf" 
                 target="_blank"
                 className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors shadow-sm"
                 title="View Resume"

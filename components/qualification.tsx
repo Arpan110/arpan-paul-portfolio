@@ -9,7 +9,7 @@ const education = [
   {
     title: 'Secondary Education (WBBSE)',
     institution: 'Ariadaha Kalachand High School',
-    date: '2014 - 2020',
+    date: '2018 - 2020',
     certificate: '/Secondary-cert.png',
   },
   {
@@ -20,7 +20,7 @@ const education = [
   },
   {
     title: 'Certificate in Advanced Computer Programming & Applications',
-    institution: 'Ramakrishna Mission Shilpamandira Computer Centre',
+    institution: 'Ramakrishna Mission Shilpamandira Computer Centre (RKMSCC)',
     date: '15/04/2020 - 20/06/2022',
     certificate: '/CACPA-cert.png',
   },
