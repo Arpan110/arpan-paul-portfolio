@@ -119,7 +119,7 @@ export function Skills() {
           <p className="text-muted-foreground">My Technical Skills</p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto cursor-pointer">
           {skills.map((skill, index) => (
             <div
               key={skill.name}

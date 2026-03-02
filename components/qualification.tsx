@@ -66,11 +66,11 @@ export function Qualification() {
 
         <Tabs defaultValue="education" className="max-w-4xl mx-auto">
           <TabsList className="grid w-full grid-cols-2 mb-12">
-            <TabsTrigger value="education" className="gap-2">
+            <TabsTrigger value="education" className="gap-2 cursor-pointer">
               <GraduationCap className="w-4 h-4" />
               Education
             </TabsTrigger>
-            <TabsTrigger value="work" className="gap-2">
+            <TabsTrigger value="work" className="gap-2 cursor-pointer">
               <Briefcase className="w-4 h-4" />
               Work
             </TabsTrigger>
@@ -117,7 +117,7 @@ export function Qualification() {
                             <div className="absolute inset-0 bg-black/0 group-hover/cert:bg-black/50 transition-colors duration-300 flex items-center justify-center">
                               <button
                                 onClick={() => setSelectedCertificate(item.certificate)}
-                                className="opacity-0 group-hover/cert:opacity-100 transition-opacity duration-300 bg-primary text-primary-foreground px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-primary/90"
+                                className="opacity-0 group-hover/cert:opacity-100 transition-opacity duration-300 bg-primary text-primary-foreground px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-primary/90 cursor-pointer"
                               >
                                 <ExternalLink className="w-4 h-4" />
                                 View Certificate
@@ -140,7 +140,7 @@ export function Qualification() {
                             <div className="absolute inset-0 bg-black/0 group-hover/cert:bg-black/50 transition-colors duration-300 flex items-center justify-center">
                               <button
                                 onClick={() => setSelectedCertificate(item.certificate)}
-                                className="opacity-0 group-hover/cert:opacity-100 transition-opacity duration-300 bg-primary text-primary-foreground px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-primary/90"
+                                className="opacity-0 group-hover/cert:opacity-100 transition-opacity duration-300 bg-primary text-primary-foreground px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-primary/90 cursor-pointer"
                               >
                                 <ExternalLink className="w-4 h-4" />
                                 View Certificate
@@ -212,7 +212,7 @@ export function Qualification() {
                             <div className="absolute inset-0 bg-black/0 group-hover/cert:bg-black/50 transition-colors duration-300 flex items-center justify-center">
                               <button
                                 onClick={() => setSelectedCertificate(item.certificate)}
-                                className="opacity-0 group-hover/cert:opacity-100 transition-opacity duration-300 bg-primary text-primary-foreground px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-primary/90"
+                                className="opacity-0 group-hover/cert:opacity-100 transition-opacity duration-300 bg-primary text-primary-foreground px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-primary/90 cursor-pointer"
                               >
                                 <ExternalLink className="w-4 h-4" />
                                 View Certificate
@@ -235,7 +235,7 @@ export function Qualification() {
                             <div className="absolute inset-0 bg-black/0 group-hover/cert:bg-black/50 transition-colors duration-300 flex items-center justify-center">
                               <button
                                 onClick={() => setSelectedCertificate(item.certificate)}
-                                className="opacity-0 group-hover/cert:opacity-100 transition-opacity duration-300 bg-primary text-primary-foreground px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-primary/90"
+                                className="opacity-0 group-hover/cert:opacity-100 transition-opacity duration-300 bg-primary text-primary-foreground px-4 py-2 rounded-lg flex items-center gap-2 hover:bg-primary/90 cursor-pointer"
                               >
                                 <ExternalLink className="w-4 h-4" />
                                 View Certificate
@@ -275,7 +275,7 @@ export function Qualification() {
             <div className="relative max-w-4xl w-full bg-card rounded-lg overflow-hidden">
               <button
                 onClick={() => setSelectedCertificate(null)}
-                className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 z-10"
+                className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white rounded-full p-2 z-10 cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

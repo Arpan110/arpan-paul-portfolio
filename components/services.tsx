@@ -74,7 +74,7 @@ export function Services() {
               <CardContent>
                 <Button
                   variant="link"
-                  className="p-0 h-auto gap-2"
+                  className="p-0 h-auto gap-2 cursor-pointer"
                   onClick={() => setSelectedService(index)}
                 >
                   View more <ArrowRight className="w-4 h-4" />
@@ -85,7 +85,7 @@ export function Services() {
         </div>
 
         <Dialog open={selectedService !== null} onOpenChange={() => setSelectedService(null)}>
-          <DialogContent>
+          <DialogContent className="[&>button]:cursor-pointer [&>button]:focus:outline-none [&>button]:ring-0 [&>button]:focus:ring-0">
             <DialogHeader>
               <DialogTitle className="text-2xl">
                 {selectedService !== null && services[selectedService].title}

@@ -76,13 +76,13 @@ export function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button onClick={scrollToContact} size="lg" className="gap-2 text-lg px-8">
+              <Button onClick={scrollToContact} size="lg" className="gap-2 text-lg px-8 cursor-pointer">
                 Contact Me <Mail className="w-4 h-4" />
               </Button>
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="gap-2 text-lg px-8" 
+                className="gap-2 text-lg px-8 cursor-pointer" 
                 onClick={scrollToPortfolio}
               >
                 View Work <Briefcase className="w-4 h-4" />
@@ -130,7 +130,7 @@ export function Hero() {
         {/* Scroll Down Indicator */}
         <button
           onClick={scrollToAbout}
-          className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+          className="cursor-pointer hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
         >
           <span className="text-sm font-medium tracking-widest uppercase">Scroll</span>
           <ChevronDown className="w-5 h-5 animate-bounce" />

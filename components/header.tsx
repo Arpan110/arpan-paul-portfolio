@@ -89,7 +89,7 @@ export function Header() {
             <li key={item.name}>
               <button
                 onClick={() => handleNavClick(item.href)}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-medium transition-colors hover:text-primary cursor-pointer ${
                   activeSection === item.href.substring(1) ? 'text-primary' : 'text-foreground'
                 }`}
               >
@@ -103,7 +103,7 @@ export function Header() {
           {/* FIXED THEME TOGGLE */}
           <button
             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            className="p-2 rounded-lg transition-transform hover:scale-110 hover:bg-accent z-50 relative"
+            className="p-2 rounded-lg transition-transform hover:scale-110 hover:bg-accent z-50 relative cursor-pointer"
             aria-label="Toggle theme"
           >
             {mounted && (theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />)}
