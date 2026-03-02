@@ -38,27 +38,26 @@ export function About() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div className="flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 animate-float">
-              {/* Neon glow background */}
+            <div className="relative w-64 md:w-80 aspect-[2/3] animate-float">
+
+              {/* Glow */}
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/50 to-primary rounded-2xl blur-2xl opacity-60 animate-pulse" />
-              
-              {/* Dashing neon border */}
+
+              {/* Border */}
               <div className="absolute inset-0 rounded-2xl border-4 border-dashed animate-border-dash shadow-[0_0_30px_rgba(139,92,246,0.6)]" />
-              
-              {/* Image container with shiny overlay */}
+
+              {/* Image */}
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="Arpan-Paul-about.png"
+                  src="/Arpan-Paul-about.png"
                   alt="About Arpan Paul"
                   fill
                   className="object-cover"
-                  loading="eager"
-                  sizes="(max-width: 768px) 256px, 320px"
-                  quality={85}
+                  priority
                 />
-                {/* Shiny overlay effect */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent opacity-40" />
               </div>
+
             </div>
           </div>
 
@@ -81,17 +80,17 @@ export function About() {
 
             <div className="flex flex-row sm:flex-row gap-4 justify-center lg:justify-start items-center sm:items-start">
               {/* Made button smaller and more compact as requested */}
-              <a 
-                href="/Arpan-Paul-Resume.pdf" 
-                download 
+              <a
+                href="/Arpan-Paul-Resume.pdf"
+                download
                 className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-2.5 rounded-full font-medium transition-all shadow-lg hover:shadow-primary/25 text-sm"
               >
                 <Download className="w-4 h-4" />
                 Download Resume
               </a>
-              
-              <a 
-                href="/Arpan-Paul-Resume.pdf" 
+
+              <a
+                href="/Arpan-Paul-Resume.pdf"
                 target="_blank"
                 className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-input bg-background hover:bg-accent hover:text-accent-foreground transition-colors shadow-sm"
                 title="View Resume"
