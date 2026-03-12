@@ -51,6 +51,12 @@ const work = [
     date: '2021 - 2022',
     certificate: '/NSDC-cert.png',
   },
+  {
+    title: 'Java Full Stack Developer - Virtual Internship',
+    institution: 'Eduskills Academy',
+    date: '02/01/2026 - 09/03/2026',
+    certificate: '/Eduskills-cert.png',
+  },
 ]
 
 export function Qualification() {
